@@ -1,0 +1,105 @@
+a {
+    color: #F5C840;
+    font-size: 4rem;
+    margin-top: 0;
+    font-family: Post No Bills Jaffna ExtraBold;
+}
+.a1 {
+    color: white;
+    width: 100%;
+    font-size: 2rem;
+    margin-top: 1.9rem;
+    margin-left: 10vw;
+    font-family: Post No Bills Jaffna ExtraBold Regular, serif;
+}
+.a2 {
+    color: white;
+    width: 100%;
+    font-size: 2rem;
+    margin-left: 10vw;
+    margin-top: 1.9rem;
+}
+.image{
+    margin: 0;
+    height:70vh;
+}
+.main-nav{
+    position:fixed;
+    left:10vw;
+
+}
+
+.image img{
+    margin: 0;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    top: 0;
+    height:70vh;
+    width: 100%;
+}
+
+body {
+    background: #262626;
+    margin: 0;
+}
+
+input {
+    height: 4vw;
+    margin-top: 3vh;
+    font-size: 1.3rem;
+    margin-left:15vw
+}
+
+.content-wrapper{
+    border-top: 1px solid #F5C840;
+    border-bottom: 1px solid #F5C840;
+    height:140vh;
+
+}
+.content-wrapper img{
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.content{
+    margin-top:35vh;
+    height:50vh;
+    display:flex;
+    justify-content: center;
+}
+.item{
+    background: rgba(41, 25, 68, 0.61);
+    width:15vw;
+    height:40vh;
+    margin-left: 10vw;
+    box-shadow: 34px 28px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item div {
+    background-color:grey;
+    border-radius:50%;
+    width:200px;
+    height:200px;
+    margin-top: 1.9vh;
+}
+
+.item h3{
+    font-family: 'Delius Unicase', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4vh;
+    line-height: 2vw;
+    text-align: center;
+
+    color: #AEAEAE;
+}
+
+.item:first-child {
+    margin-left:0;
+}
