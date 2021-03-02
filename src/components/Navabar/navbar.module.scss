@@ -1,0 +1,66 @@
+.mainNav{
+  position:fixed;
+  width:100%;
+  height:10vh;
+  display:flex;
+  justify-content:center;
+  .menuItem{
+    color: white;
+    font-size: 2.5rem;
+    margin-left: 10vw;
+    margin-top: 3vh;
+  }
+
+  a {
+    color: #F5C840;
+    font-size: 4em;
+    margin-top: 1vh;
+    font-family: 'Lobster Two', cursive;
+  }
+  input {
+    height: 5vh;
+    margin-top: 3vh;
+    font-size: 1.3rem;
+    margin-left:15vw;
+    border-radius:30px;
+    padding-left: 1vw;
+    border:1px solid black;
+    width:13vw;
+    background-color:lightgray;
+    font-family: 'Lobster Two', cursive;
+    &:focus {
+      outline:none;
+    }
+  }
+}
+
+.active {
+  background-color:#262626;
+  animation-duration: 0.5s;
+  animation-name: fadeIn;
+}
+.disabled {
+  background-color:transparent;
+  animation-duration: 0.5s;
+  animation-name: fadeOut;
+}
+
+@keyframes fadeIn {
+  from {
+    background-color: transparent;
+  }
+
+  to {
+    background-color: #262626;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    background-color: #262626;
+  }
+
+  to {
+    background-color: transparent;
+  }
+}

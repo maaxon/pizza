@@ -1,33 +1,4 @@
 
-.mainNav{
-  position:fixed;
-  left:10vw;
-  .a1 {
-    color: white;
-    font-size: 2rem;
-    margin-top: 1.9rem;
-    margin-left: 10vw;
-    font-family: Post No Bills Jaffna ExtraBold Regular, serif;
-  }
-  .a2 {
-    color: white;
-    font-size: 2rem;
-    margin-left: 10vw;
-    margin-top: 1.9rem;
-  }
-
-    a {
-      color: #F5C840;
-      font-size: 4rem;
-      margin-top: 0;
-    }
-  input {
-    height: 4vw;
-    margin-top: 3vh;
-    font-size: 1.3rem;
-    margin-left:15vw
-  }
-}
 
 .image {
   margin: 0;
@@ -57,6 +28,13 @@ img{
     z-index: -1;
     height:140vh;
   }
+  .moto{
+    position: absolute;
+    width:42vw;
+    height:30vh;
+    top: 80vh;
+    left: 28vw;
+  }
 
 }
 
@@ -66,6 +44,16 @@ img{
   height:50vh;
   display:flex;
   justify-content: center;
+  svg{
+      width:15vw;
+      height:10vh;
+      position:relative;
+      top:30vh;
+    color:white
+  }
+  .item:first-of-type {
+    margin-left:0;
+  }
 }
 .item{
   width:15vw;
@@ -74,7 +62,7 @@ img{
   display:flex;
   flex-direction: column;
   align-items: center;
-
+  animation: fadeIn 1s ease;
   img {
     width:15vw;
     height:30vh;
@@ -102,7 +90,7 @@ img{
       margin:0;
       z-index: 3;
       left: 13.5vw;
-      top: 2.5vh;
+      top: 3.5vh;
       font-size:3vh;
       width:0
     }
@@ -119,9 +107,15 @@ h3{
 
   color: #AEAEAE;
 }
-&:first-child {
-  margin-left:0;
-}
+
 }
 
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1
+  }
+}
 
