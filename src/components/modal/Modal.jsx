@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import maks_loh from './pizza_1.jpg';
 
 import Portal from '../portal/Portal.jsx';
 
@@ -17,11 +18,17 @@ const Modal = ({
           <Portal>
           <div className="modalOverlay">
             <div className="modalWindow">
-              <div className="modalHeader">
-                <div className="modalTitle">{title}</div>
-              </div>
               <div className="modalBody">
-                {children}
+                <img src={maks_loh} />
+                <div className='rightSide'>
+                  <h1>Maks Loh Classic</h1>
+                  <p>Соус, оливки, член, мука, cum, shit, Denis geniy</p>
+                  <div className="select">
+                    <p>big</p>
+                    <p>mid</p>
+                    <p className='active'>small</p>
+                  </div>
+                </div>
               </div>
               <div className="modalFooter">
                 <button onClick={onCancel}>Cancel</button>

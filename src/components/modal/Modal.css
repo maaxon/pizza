@@ -13,8 +13,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #FFF;
-  min-height: 200px;
-  width: 500px;
+  min-height: 40vw;
+  width: 80vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -24,6 +24,11 @@
 .modalBody,
 .modalFooter {
   padding: 10px 20px;
+}
+
+.modalBody {
+  display: grid;
+  grid-template-columns: 47vw 45vw;
 }
 
 .modalHeader {
@@ -47,4 +52,52 @@
 
 .modalFooter button:last-child {
   margin-left: 10px;
+}
+img {
+  height: 42vw;
+}
+
+h1 {
+  font-size: 3vh;
+  margin: 0;
+}
+
+p {
+  width: 70%;
+}
+
+.select {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  width: 23vw;
+  height: 2.5vw;
+  background-color: #eaeaea;
+  border-radius: 38px;
+}
+
+.select p {
+  padding-top: 0.4vw;
+  margin: 0 0.8vw 0 3vw;
+  width: 10%;
+  font-size: 1.5vw;
+}
+
+.select p:first-of-type {
+  padding-left: 2.8vw;
+  margin-left: -5vw;
+}
+
+
+.rightSide {
+
+}
+
+.active {
+  padding-left: 2.5vw;
+  padding-right: 3vw;
+  text-align: center;
+  background-color: white;
+  border-radius: 38px;
+  box-shadow: 0 0 0.8vw 0.1vw rgba(0, 0, 0, 0.25);
 }

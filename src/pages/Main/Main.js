@@ -1,6 +1,6 @@
 import pizza_banner from './pizza_banner.jpg'
 import wood_background from "./simple_background_texture_monochrome_wood-242670.jpg"
-import pizza_item_1 from "./original_5554a89d40c08865448c21b1_5783cd3fe1950.jpg"
+import pizza_item_1 from "../../components/modal/pizza_1.jpg"
 import classes from './main.module.scss'
 import pricer from './2021-02-25_215135-removebg-preview.png'
 import Slider from '../../components/Slider/Slider'
@@ -10,9 +10,9 @@ import {Search} from '@styled-icons/fa-solid/Search'
 import React from "react";
 import Navbar from "../../components/Navabar/Navbar"
 import moto from './try_not_to_eat.png'
-import pizza_item_2 from './bd570867.jpg'
-import pizza_item_3 from './dark-wooden-boards-background_88281-3673.jpg'
-import pizza_item_4 from './dark-wooden-boards-background_88281-3679.jpg'
+import pizza_item_2 from './pizza_2.jpg'
+import pizza_item_3 from './pizza_3.jpg'
+import pizza_item_4 from './pizza_4.jpg'
 
 export default function Main() {
 
