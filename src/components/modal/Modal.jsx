@@ -26,7 +26,7 @@ const Modal = ({
                   <div className="select">
                     <p>big</p>
                     <p>mid</p>
-                    <p className='active'>small</p>
+                    <p className="active">small</p>
                   </div>
                 </div>
               </div>

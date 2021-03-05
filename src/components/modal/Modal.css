@@ -77,26 +77,18 @@ p {
 }
 
 .select p {
-  padding-top: 0.4vw;
-  margin: 0 0.8vw 0 3vw;
-  width: 10%;
+  margin: 0.3vw 0 0 2vw;
+  position: relative;
+  width: 33%;
   font-size: 1.5vw;
 }
 
-.select p:first-of-type {
-  padding-left: 2.8vw;
-  margin-left: -5vw;
-}
-
-
-.rightSide {
-
-}
 
 .active {
+  margin: 0 0 0 0 !important;
   padding-left: 2.5vw;
-  padding-right: 3vw;
-  text-align: center;
+  padding-top: 0.3vw;
+  height: 2.2vw;
   background-color: white;
   border-radius: 38px;
   box-shadow: 0 0 0.8vw 0.1vw rgba(0, 0, 0, 0.25);
