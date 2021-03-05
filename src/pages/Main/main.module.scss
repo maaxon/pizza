@@ -1,0 +1,121 @@
+
+
+.image {
+  margin: 0;
+  height: 70vh;
+
+img{
+  margin: 0;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  top: 0;
+  height:70vh;
+  width: 100%;
+}
+}
+
+
+.contentWrapper{
+  border-top: 1px solid #F5C840;
+  border-bottom: 1px solid #F5C840;
+  height:140vh;
+
+  img{
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    height:140vh;
+  }
+  .moto{
+    position: absolute;
+    width:42vw;
+    height:30vh;
+    top: 80vh;
+    left: 28vw;
+  }
+
+}
+
+
+.content{
+  margin-top:35vh;
+  height:50vh;
+  display:flex;
+  justify-content: center;
+  svg{
+      width:15vw;
+      height:10vh;
+      position:relative;
+      top:30vh;
+    color:white
+  }
+  .item:first-of-type {
+    margin-left:0;
+  }
+}
+.item{
+  width:15vw;
+  height:40vh;
+  margin-left: 15vw;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 1s ease;
+  img {
+    width:15vw;
+    height:30vh;
+    margin-top: 1.9vh;
+    position: static;
+  }
+
+  .pricer{
+    position: relative;
+
+    img{
+      transform: rotate(-30deg);
+      margin:0;
+      width:15vw;
+      height:15vh;
+      position: inherit;
+      z-index: 2;
+      top: 13vh;
+      left: 7vw;
+    }
+    p{
+      transform: rotate(-10deg);
+      position: inherit;
+      text-align: center;
+      margin:0;
+      z-index: 3;
+      left: 13.5vw;
+      top: 3.5vh;
+      font-size:3vh;
+      width:0
+    }
+  }
+
+
+h3{
+  font-family: 'Delius Unicase', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 4vh;
+  line-height: 2vw;
+  text-align: center;
+
+  color: #AEAEAE;
+}
+
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1
+  }
+}
+
