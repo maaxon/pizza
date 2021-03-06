@@ -7,8 +7,6 @@ export default function Navbar(){
     const [active,setActive] = useState('')
     window.addEventListener('scroll', function(e) {
         if(!navbar.current) return
-        console.log(window.scrollY)
-        console.log(navbar.current.clientHeight)
         if(window.scrollY > navbar.current.clientHeight){
             setActive(classes.active)
         }else {

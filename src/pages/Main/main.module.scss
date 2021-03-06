@@ -49,7 +49,7 @@ img{
       height:10vh;
       position:relative;
       top:30vh;
-    color:white
+      color:white
   }
   .item:first-of-type {
     margin-left:0;
@@ -64,6 +64,7 @@ img{
   align-items: center;
   animation: fadeIn 1s ease;
   img {
+    display: inline-block;
     width:15vw;
     height:30vh;
     margin-top: 1.9vh;

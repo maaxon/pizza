@@ -27,13 +27,13 @@ export default function Main() {
                 <img src={moto} className={classes.moto}/>
                 <div className={classes.content}>
 
-                    <Slider slides_count={3} >
+                    <Slider slides_count={3} style={{display: 'flex'}} >
                         <AngleLeft type={'left-arrow'}/>
                         <Item img={pizza_item_1} type={'slide'} />
                         <Item img={pizza_item_2} type={'slide'}/>
                         <Item img={pizza_item_3} type={'slide'}/>
                         <Item img={pizza_item_4} type={'slide'}/>
-                        <Item img={pizza_item_1} type={'slide'} />
+                        <Item img={pizza_item_2} type={'slide'} />
                         <AngleRight type={'right-arrow'}/>
                     </Slider>
                 </div>
