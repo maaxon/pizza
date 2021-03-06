@@ -1,0 +1,150 @@
+.modalOverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.modalWindow {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  background-color: #FFF;
+  min-height: 40vw;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 30px;
+  z-index: 3;
+}
+
+.modalHeader,
+.modalBody {
+  padding: 10px 20px;
+}
+.close{
+  width:2vw;
+  height:5vh;
+  position: absolute;
+  color: white;
+  left: 102%;
+  top: -1vh;
+}
+
+.modalBody {
+  display: grid;
+  grid-template-columns: 41vw 37vw;
+  grid-column-gap: 1vw;
+}
+
+.modalHeader {
+  min-height: 60px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.modalTitle {
+  font-weight: bold;
+}
+
+
+img {
+  height: 42vw;
+}
+
+h1 {
+  font-size: 3vh;
+  margin: 0;
+}
+
+p {
+  width: 70%;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.select {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  width: 23vw;
+  height: 2.5vw;
+  background-color: #eaeaea;
+  border-radius: 38px;
+}
+
+.select p {
+  margin: 0.3vw 0 0 2vw;
+  position: relative;
+  width: 33%;
+  font-size: 1.5vw;
+}
+
+
+.active {
+  margin: 0 0 0 0 !important;
+  padding-left: 2.5vw;
+  padding-top: 0.3vw;
+  height: 2.2vw;
+  background-color: white;
+  border-radius: 38px;
+  box-shadow: 0 0 0.8vw 0.1vw rgba(0, 0, 0, 0.25);
+}
+
+.addText {
+  margin-top: 0.8vw;
+}
+
+.adds {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0.8vw;
+  margin-right: 0.5vw;
+  height: 13vw;
+  width: 9vw;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 0.3vw 1vw 0.1vw rgba(0, 0, 0, 0.25);
+}
+
+.addImg {
+  width: 12vw;
+  height: 9vw;
+}
+
+.textpodaddom {
+  margin-top: -0.3vw;
+  font-size: 3vh;
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.buttonBuy {
+  font-size: 90%;
+  text-align: center;
+  background-color: #F5C840;
+  border-color: #F5C840;
+  margin-top: 1vw;
+  border-radius: 7px;
+  width: 45%;
+  height: 5%;
+  outline: none;
+}
