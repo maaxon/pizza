@@ -1,0 +1,80 @@
+@import "/src/misc/index.scss";
+
+.image {
+  margin: 0;
+  height: 50vh;
+
+  img{
+    margin: 0;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    top: 0;
+    height:50vh;
+    width: 100%;
+  }
+}
+
+
+.contentWrapper{
+  border-top: 1px solid $mainRed;
+  border-bottom: 1px solid $mainRed;
+  height:140vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .background{
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    height:140vh;
+  }
+
+  .tabs{
+    display: flex;
+    justify-content:space-between;
+    width:45%;
+    margin-top: 4vh;
+    .tab{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 26%;
+      height: 70%;
+
+      img{
+        width:100%;
+        height:100%;
+      }
+      p{
+        text-align: center;
+        margin: 0;
+        font-family: 'Delius Unicase', cursive;
+        font-weight: bold;
+        font-style: normal;
+        color: rgba(238, 238, 238, 0.78);
+      }
+    }
+  }
+
+
+  .content{
+    display:flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    .menuItem{
+      margin-left: 11vw;
+      margin-top: 10vh;
+    }
+
+  }
+
+
+
+
+}

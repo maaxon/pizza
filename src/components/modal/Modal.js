@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import PropTypes from 'prop-types';
-import pizza from './pizza_1.jpg';
+import pizza from '../../misc/pizza.png';
 import ketchup from './ketchup.png';
 
 import Portal from '../portal/Portal.jsx';

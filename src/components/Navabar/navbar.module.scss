@@ -4,6 +4,7 @@
   height:10vh;
   display:flex;
   justify-content:center;
+  z-index:999;
   .menuItem{
     color: white;
     font-size: 2.5rem;
@@ -38,6 +39,7 @@
   background-color:#262626;
   animation-duration: 0.5s;
   animation-name: fadeIn;
+
 }
 .disabled {
   background-color:transparent;
