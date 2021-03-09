@@ -1,15 +1,27 @@
 import React, {useState} from 'react';
 import PropTypes from 'prop-types';
+<<<<<<< HEAD
 import pizza from '../../misc/pizza.png';
 import ketchup from './ketchup.png';
 
 import Portal from '../portal/Portal.jsx';
 import {Times} from '@styled-icons/fa-solid/Times'
+=======
+import pizza from './pizza_1.jpg';
+import ketchup from './ketchup.png';
+
+import Portal from '../portal/Portal.jsx';
+
+>>>>>>> origin/main
 
 
 import './Modal.css';
 
+<<<<<<< HEAD
 function Modal ({title, isOpen,onClose, children,})  {
+=======
+function Modal ({title, isOpen, onCancel, onSubmit, children,})  {
+>>>>>>> origin/main
 
   return (
     <>
@@ -18,7 +30,10 @@ function Modal ({title, isOpen,onClose, children,})  {
           <div className="modalOverlay">
             <div className="modalWindow">
               <div className="modalBody">
+<<<<<<< HEAD
                 <Times onClick={onClose} className='close'/>
+=======
+>>>>>>> origin/main
                 <img src={pizza} />
                 <div className='rightSide'>
                   <h1>Maks Loh Classic</h1>
