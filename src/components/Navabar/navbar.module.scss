@@ -17,6 +17,7 @@
     font-size: 4em;
     margin-top: 1vh;
     font-family: 'Lobster Two', cursive;
+    text-decoration: none;
   }
   input {
     height: 5vh;
@@ -64,5 +65,21 @@
 
   to {
     background-color: transparent;
+  }
+}
+@media screen and (max-width: 576px){
+  .mainNav{
+    a{
+      width: 25vw;
+      height:7vh;
+      font-size: 4vh;
+      margin-top: 2.5vh;
+
+    }
+    .menuItem{
+      font-size: 3.5vh;
+      width: 18vw;
+      margin-left: 5vw;
+    }
   }
 }

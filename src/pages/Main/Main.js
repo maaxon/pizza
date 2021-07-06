@@ -1,22 +1,28 @@
 import pizza_banner from '../../misc/pizza_banner.jpg'
-import wood_background from "../../misc/simple_background_texture_monochrome_wood-242670.jpg"
+import wood_background from "../../misc/main_background.jpg"
 import classes from './main.module.scss'
-import pricer from '../../misc/2021-02-25_215135-removebg-preview.png'
 import Slider from '../../components/Slider/Slider'
-import {AngleLeft} from '@styled-icons/fa-solid/AngleLeft'
-import {AngleRight} from '@styled-icons/fa-solid/AngleRight'
-import {Search} from '@styled-icons/fa-solid/Search'
-import React from "react";
+import React, {useState} from "react";
 import Navbar from "../../components/Navabar/Navbar"
 import moto from '../../misc/try_not_to_eat.png'
 import { useLocation } from "wouter";
-import pizza from '../../misc/pizza.png'
 import MenuItem from "../../components/MenuItem/MenuItem";
+import main from "../../store/main"
+import modal from "../../store/modal"
+import {observer} from 'mobx-react-lite'
+import Modal from "../../components/modal/Modal";
 
-export default function Main() {
+export default observer(function Main() {
 
+        const [location, setLocation] = useLocation();
 
-    const [location, setLocation] = useLocation();
+        const [isModalOpen,setOpen]= useState(false)
+
+        //close modal
+        const onClose = () => {
+            setOpen(false)
+            modal.unsetModal()
+        }
 
     return(
         <div >
@@ -24,25 +30,24 @@ export default function Main() {
                 <Navbar  />
                 <img src={pizza_banner} />
             </div>
+
             <div className={classes.contentWrapper}>
                 <img src={wood_background}/>
                 <img src={moto} className={classes.moto}/>
-                <div className={classes.content}>
 
-                    <Slider slides_count={3} style={{display: 'flex'}} >
-                        <AngleLeft type={'left-arrow'}/>
-                        <MenuItem img={pizza} type={'slide'} />
-                        <MenuItem img={pizza} type={'slide'}/>
-                        <MenuItem img={pizza} type={'slide'}/>
-                        <MenuItem img={pizza} type={'slide'}/>
-                        <MenuItem img={pizza} type={'slide'} />
-                        <AngleRight type={'right-arrow'}/>
+                <div className={classes.content}>
+                    <Slider slides_count={main.slidesCount} style={{display: 'flex',width:'100%'}} >
+                        {main.products.slice(0,4).map((product)=>{
+                            return <MenuItem key={product.id} setOpen={()=>{setOpen(true)}} product={product} type={'slide'} />
+                        })}
                     </Slider>
                 </div>
 
                 <button onClick={()=>{setLocation('/menu')}} className={classes.menuBtn}>Menu</button>
             </div>
+
+            <Modal  onClose={onClose} isOpen={isModalOpen}/>
         </div>
     )
 }
-
+)

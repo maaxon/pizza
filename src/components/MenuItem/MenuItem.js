@@ -1,17 +1,20 @@
 import classes from "./MenuItem.module.scss";
 import pricer from "../../misc/2021-02-25_215135-removebg-preview.png";
-import React from "react";
+import React,{useState} from "react";
+import modal from "../../store/modal"
 
-export default function MenuItem({img,itemClass=''}){
+export default function MenuItem({product,setOpen,itemClass=''}){
+    const {img,title,subtitle,price} = product
+
     return(
-        <div className={`${classes.item} ${itemClass}`}>
-            <div className={classes.pricer} >
+        <div onClick={()=>{modal.setProduct(product);setOpen()}} className={`${classes.item} ${itemClass}`}>
+            <div onClick={()=>false} className={classes.pricer} >
                 <img  src={pricer} />
-                <p>$30</p>
+                <p>${price}</p>
             </div>
-            <img src={img}/>
-            <h3>maks loh classic</h3>
-            <p>tasty cum with love and cock</p>
+            <img  src={img}/>
+            <h3>{title}</h3>
+            <p>{subtitle}</p>
         </div>
     )
 }

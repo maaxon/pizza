@@ -11,36 +11,157 @@
   h1{
     color:#eeeeee;
     font-family: 'Livvic', sans-serif;
+    margin: 1vh 0;
   }
 
   .cartBody{
     width:80%;
     height: 100%;
     background: rgba(38, 38, 38, 0.6);
-    filter: blur(1px);
     border-radius: 13px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     .cartItem{
-      height:10vh;
-      width: 80%;
+      margin-left: 3%;
+      height: 17vh;
+      width: 95%;
+      display: grid;
+      grid-template-columns: 40% 33% 23% 5%;
+
+      border-bottom: 1px dashed #000000;
+
+      svg{
+        width: 70%;
+        color: white;
+        margin-top: 10%;
+      }
     }
 
     .productView{
-      width: 40%;
-      height: 100%;
+      width: 100%;
+      height: 15vh;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      font-size: 170%;
+      color: #eeeeee;
+
+      h4 {
+        font-family: 'Delius Unicase', bold cursive;
+        margin: 0;
+      }
+      p {
+        margin: 0;
+        font-family: 'Livvic', sans-serif;
+      }
+      .fonts {
+        margin-top: 8%;
+      }
+
         img{
           object-fit: cover;
-          width: 80%;
-          height:80%;
+          width: 51%;
+          height: 116%;
         }
     }
 
-    .counter{}
+    .counter {
+      width: 7vw;
+      height: 33%;
+      background: rgba(238, 238, 238, 0.8);
+      box-shadow: 8px 7px 16px rgba(0, 0, 0, 0.25);
+      border-radius: 14px;
+      align-self: center;
+      margin-left: 40%;
 
-    .price{}
-  }
-  .cartBottom{
+      font-size: 230%;
+      font-family: 'Delius Unicase';
+      font-weight: 700;
+      color: #000000;
 
+      span {
+        margin-left: 13%;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+      }
+    }
+
+    .price{
+      font-size: 200%;
+      color: #eeeeee;
+      align-self: center;
+      margin-left: 20%;
+    }
   }
+
 
 }
+@media screen and (max-width: 576px) {
+  .cartWrapper {
+
+
+    .cartBody {
+
+
+      .cartItem {
+        height: 28vh;
+        display: grid;
+        grid-template-rows: 20vh 7vh;
+        grid-template-columns: 100%;
+        svg{
+          width: 10%;
+          color: white;
+          margin-top: 10%;
+          position: relative;
+          top: -33vh;
+          left: 51vw;
+        }
+
+      }
+
+      .productView {
+        display: grid;
+        grid-template-rows: 15vh 10vh;
+
+        img {
+          height: 90%;
+          width: 75%;
+          margin-top: 3%;
+          margin-left: 12%;
+        }
+
+        .fonts {
+          margin: 0;
+          width: 100%;
+          font-size: 75%;
+          text-align: center;
+        }
+
+
+      }
+
+        .counter {
+          display: flex;
+          width: 35%;
+          height: 65%;
+          margin-left: 7%;
+          margin-top: 7%;
+          span {
+            margin-left: 13%;
+            margin-bottom: 44%;
+            font-size: 75%;
+          }
+        }
+
+        .price {
+          margin-left: 60%;
+          margin-top: -5vh;
+        }
+      }
+    }
+
+  }

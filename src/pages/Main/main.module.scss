@@ -85,4 +85,60 @@ img{
     opacity: 1
   }
 }
+@media screen and (min-width: 576px) and (max-width:1100px) {
+  .image {
+  height: 13vh;
+  }
 
+  .contentWrapper {
+
+
+    .moto {
+      height: 13vh;
+      top: 19vh;
+      width: 46vw;
+    }
+    .content{
+      margin-top: 12vh;
+
+    svg {
+      width: 22vw;
+    }
+    }
+
+    .menuBtn {
+      margin-top: 15vh;
+      width: 19%;
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 576px){
+  .image{
+    img{
+      height: 38vh;
+    }
+    height: 10vh;
+  }
+  .contentWrapper{
+    .menuBtn{
+      margin-top: 0;
+      width: 25%;
+      font-weight: bold;
+    }
+    .moto{
+      width: 80vw;
+      height:16vh;
+      left: 8vw;
+      top: 14vh
+    }
+    .content{
+      svg{
+        top: 10vh;
+        width: 25vw;
+      }
+    }
+  }
+}
