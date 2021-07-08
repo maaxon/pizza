@@ -46,7 +46,9 @@
       left: 13.5vw;
       top: 3.5vh;
       font-size:3vh;
-      width:0
+      width:0;
+      color:#262626;
+      font-weight: bold;
     }
   }
 
@@ -97,10 +99,6 @@
       position: relative;
       top: -48%;
       left: 25%;
-      p{
-        color:#262626;
-        font-weight: bold;
-      }
 
       img{
         width: 20vw;
