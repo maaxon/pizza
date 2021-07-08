@@ -49,8 +49,8 @@ class Cart{
         }
     }
 
-    deleteItem(item){
-        this.cart = this.cart.filter((item,index)=>index !== this.cart.indexOf(item))
+    deleteItem(product){
+        this.cart = this.cart.filter((item,index)=>index !== this.cart.indexOf(product))
     }
     //count total price of items in cart
     get countPrice(){

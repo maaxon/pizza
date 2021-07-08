@@ -8,7 +8,7 @@ import {Times} from '@styled-icons/fa-solid/Times'
 export default observer(function Cart() {
 
     return(
-        <div>
+        <div >
 
             <Navbar scrollable={false} navClass={classes.navbar} />
 

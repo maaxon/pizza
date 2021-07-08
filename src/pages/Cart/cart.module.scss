@@ -1,3 +1,5 @@
+@import "/src/misc/index.scss";
+
 .navbar{
   position: relative;
 }
@@ -97,7 +99,10 @@
       margin-left: 20%;
     }
   }
-
+  h3{
+    font-size: 200%;
+    color: $mainRed
+  }
 
 }
 @media screen and (max-width: 576px) {
