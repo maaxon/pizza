@@ -32,6 +32,7 @@ export default function Slider({children,slides_count,style,arrowClass}){
         if (new_val > slides_arr.length-1) new_val = new_val - slides_arr.length
         const updated = slides.slice(1,slides_count)
         setSlides([...updated,slides_arr[new_val]])
+        console.log(slides)
     }
 
 
@@ -40,7 +41,7 @@ export default function Slider({children,slides_count,style,arrowClass}){
         <div  ref={slider} style={style} >
                <AngleLeft className={arrowClass} type={'left-arrow'} onClick={leftArrowHandle}/>
                     {slides.map(slide=>{
-                        return <slide.type {...slide.props} key={`slide_${slide.props.slideNum}`} />
+                        return <slide.type {...slide.props} key={slide.props.slideNum} />
                     })}
                 <AngleRight type={'right-arrow'} className={arrowClass} onClick={rightArrowHandle}/>
         </div>

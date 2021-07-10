@@ -37,7 +37,7 @@ export default observer(function Main() {
 
                 <div className={classes.content}>
                     <Slider slides_count={main.slidesCount} style={{display: 'flex',width:'100%'}} >
-                        {main.products.slice(0,4).map((product)=>{
+                        {main.products.slice(0,5).map((product)=>{
                             return <MenuItem key={product.id} setOpen={()=>{setOpen(true)}} product={product} type={'slide'} />
                         })}
                     </Slider>
