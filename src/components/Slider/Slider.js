@@ -22,6 +22,10 @@ export default function Slider({children,slides_count,style,arrowClass}){
     function leftArrowHandle(){
         let new_val = slides[slides.length - 1].props.slideNum + slides_count -1
         if (new_val > slides_arr.length-1) new_val = new_val - slides_arr.length
+        if (slides_count ===1){
+            new_val = slides[0].props.slideNum -1
+            if (new_val < 0) new_val = slides_arr.length - 1
+        }
         const updated = slides.slice(0,slides_count-1)
         setSlides([slides_arr[new_val],...updated])
     }
@@ -32,7 +36,6 @@ export default function Slider({children,slides_count,style,arrowClass}){
         if (new_val > slides_arr.length-1) new_val = new_val - slides_arr.length
         const updated = slides.slice(1,slides_count)
         setSlides([...updated,slides_arr[new_val]])
-        console.log(slides)
     }
 
 
